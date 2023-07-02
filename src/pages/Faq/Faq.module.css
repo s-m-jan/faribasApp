@@ -1,0 +1,23 @@
+.faqForm{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqForm label{
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.faqForm textarea{
+    width: 40%;
+    height: 200px;
+    margin-top: 20px;
+    direction: rtl;
+   font-size: 1.4rem;
+   padding: 10px;
+   border: 1px solid #ccc
+}

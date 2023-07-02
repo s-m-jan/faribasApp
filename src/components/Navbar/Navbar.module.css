@@ -14,14 +14,14 @@
     flex-direction: row-reverse;
     justify-content: space-around;
 }
+
+.navbar #rightSide a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
 .navbar #leftSide {
     justify-content: space-around;
     flex: 4;
-}
-.navbar #leftSide  {
     padding: 20px;
-}
-
-.navbar #rightSide span{
-    font-size: 1.5rem;
 }
