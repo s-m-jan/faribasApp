@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { Alert, AlertTitle, TextField, Typography } from "@mui/material";
-import styled from "./Faq.module.css";
+import { Alert, Box } from "@mui/material";
 import InputForm from "../../components/InputForm/InputForm";
+import styled from "./Faq.module.css"
+import QuestionCard from "../../components/QuestionCard/QuestionCard";
+import { useQuery } from "react-query";
+import Axios from "axios"
 
 export default function Faq() {
+  
+
+  const {data}= useQuery(["questions"], ()=>{
+    return Axios.get("http://localhost:8000/questions").then((res)=>res.data)
+  })
+
+  console.log(data)
+ 
   return (
-    <div>
+    <div className="container">
       <Navbar />
-      <form className={styled.faqForm}>
-        <Alert sx={{lineHeight: '50px', fontSize: "1.5rem"}} severity="info">
-          
-        شما هم می توانید سوالتان را بپرسید
+      <h1>{}</h1>
+      <Box className={styled.questionCards} >
+        {data?.map((item)=>{
+          return <QuestionCard imageUrl={item.imageUrl} title={item.title} content={item.content}/>
+        })}
+
+      
+      </Box>
+      <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin:"10px auto"}}>
+        <Alert sx={{ lineHeight: "50px", fontSize: "1.5rem" }} severity="info">
+          شما هم می توانید سوالتان را بپرسید
         </Alert>
-        <InputForm type="text" title="نام و نام خانوادگی" />
-        <InputForm type="email" title=" ایمیل  " />
-        <InputForm type="text" title=" شماره تماس  " />
-        <label>متن سوال</label>
-        <textarea />
-      </form>
+      </div>
+      <InputForm/> 
     </div>
   );
 }
