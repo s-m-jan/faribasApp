@@ -11,7 +11,7 @@ import React from "react";
 
 export default function QuestionCard(props) {
   return (
-    <Card sx={{ maxWidth: 345, direction: "rtl" }}>
+    <Card sx={{ maxWidth: 345, direction: "rtl", marginBottom: "10px" }}>
       <CardMedia component="img" alt="green iguana" image={props.imageUrl} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

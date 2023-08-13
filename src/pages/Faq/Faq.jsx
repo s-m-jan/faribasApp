@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import { Alert, Box } from "@mui/material";
 import InputForm from "../../components/InputForm/InputForm";
 import styled from "./Faq.module.css"
@@ -18,11 +17,11 @@ export default function Faq() {
  
   return (
     <div className="container">
-      <Navbar />
+     
       <h1>{}</h1>
       <Box className={styled.questionCards} >
         {data?.map((item)=>{
-          return <QuestionCard imageUrl={item.imageUrl} title={item.title} content={item.content}/>
+          return <QuestionCard  imageUrl={item.imageUrl} title={item.title} content={item.content}/>
         })}
 
       
