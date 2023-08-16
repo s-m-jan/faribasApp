@@ -1,4 +1,4 @@
-import  "bootstrap/dist/css/bootstrap.min.css"
+
 
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
