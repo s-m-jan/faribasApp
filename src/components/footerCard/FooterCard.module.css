@@ -1,0 +1,12 @@
+.cardStyle{
+    cursor: pointer;
+  
+}
+.cardStyle:hover img{
+    opacity: .6;
+}
+
+img{
+    transition: opacity 1s linear ;
+}
+
