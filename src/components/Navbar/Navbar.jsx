@@ -28,7 +28,7 @@ export default function Navbar() {
 
 
  <div className="container-fluid">
-<nav className="navbar navbar-expand-lg fixed-top " style={{backgroundColor: "rgba(21,25,29,.7)"}} >
+<nav className="navbar navbar-expand-lg fixed-top" style={{backgroundColor: "rgba(21,25,29,.7)"}} >
       <div className="container-fluid">
       <span  class="navbar-brand" href="#"><img style={{maxHeight: '40px'}} src={logo} alt="logo" /></span>
       <Link to="/" style={linkStyle}>

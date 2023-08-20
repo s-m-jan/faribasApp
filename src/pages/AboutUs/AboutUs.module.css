@@ -1,5 +1,13 @@
 .aboutUs{
-    background-color: palevioletred;
-    padding: 80px;
-    min-height: 400px;
+    background-image: url("./../../assets/images/aboutBg.jpg");
+    background-size:cover;
+    background-color: #341f97;
+    background-blend-mode:lighten;
+    padding: 100px;
+    background-attachment: fixed;
+}
+
+img{
+    width: 70%;
+    border-radius: 40px;
 }

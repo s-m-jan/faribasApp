@@ -9,11 +9,10 @@
 }
 
 .footerContainer{
-    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 900px;
+    min-height: 900px;
     background: #fff;
 }
 
@@ -136,6 +135,12 @@ footer #wave4{
     }
     100%{
         background-position-x: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footerContainer{
+        margin-top: 100px;
     }
 }
 
