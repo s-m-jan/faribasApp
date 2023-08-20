@@ -1,9 +1,9 @@
-.cardStyle{
+.cardStyle img{
     cursor: pointer;
   
 }
 .cardStyle:hover img{
-    opacity: .6;
+    opacity: .4;
 }
 
 img{
