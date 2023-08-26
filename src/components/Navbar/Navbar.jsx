@@ -49,7 +49,7 @@ export default function Navbar() {
         <span style={{color: "#fff"}}>درباره ما </span>
         </a>
       </Link>
-      <Link to="/about" style={linkStyle}>
+      <Link to="/contactUs" style={linkStyle}>
       <a className="navbar-brand">
         <LocalPhone className="ms-2 text-info"/>
         <span style={{color: "#fff"}}> تماس با ما  </span>

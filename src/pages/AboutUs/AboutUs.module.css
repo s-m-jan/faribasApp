@@ -1,13 +1,96 @@
 .aboutUs{
     background-image: url("./../../assets/images/aboutBg.jpg");
     background-size:cover;
-    background-color: #341f97;
+    background-color: #605c70;
     background-blend-mode:lighten;
     padding: 100px;
     background-attachment: fixed;
 }
 
-img{
+.sajjadImg{
     width: 70%;
     border-radius: 40px;
+}
+
+#ctaButton{
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #ef7e56;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: color 1s ease;
+    position : relative;
+    transition: all .6s ease;
+  }
+
+  #ctaButton:hover{
+    color: #ef7e56;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px #ef7e56 inset;
+  }
+
+  #ctaButton::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: transform ease 1s, border ease .3s ;
+  }
+
+  #ctaButton:hover::before{
+    transform: scale(1.2);
+    border: 1px solid transparent;
+  }
+  
+  
+  
+ 
+
+
+
+
+
+.infoAbout{
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    animation: infotrans 1s ease ;
+}
+
+.imgContainer{
+    animation: imgtrans 1s ease ;
+}
+
+@keyframes infotrans {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+@keyframes imgtrans {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+.infoAboutBody{
+    line-height: 35px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
 }
