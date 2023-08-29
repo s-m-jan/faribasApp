@@ -10,7 +10,7 @@ const MovieBg = () => {
       <video src={videoBg} autoPlay loop muted/>
       <div className={style.content}>
         <img src={sajjadImage} alt="sajjad afkhaminia" />
-        <h1>به وبسایت شخصی سجاد افخمی نیا وکیل پایه یک دادگستری خوش آمدید</h1>
+        <h1 className='text-center'>به وبسایت شخصی سجاد افخمی نیا وکیل پایه یک دادگستری خوش آمدید</h1>
         <h3>قبول کلیه دعاوی حقوقی</h3>
       </div>
     </div>

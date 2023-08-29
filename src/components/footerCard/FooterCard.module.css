@@ -1,6 +1,9 @@
+.cardStyle{
+    margin-top: 8px;
+}
+
 .cardStyle img{
     cursor: pointer;
-  
 }
 .cardStyle:hover img{
     opacity: .4;
