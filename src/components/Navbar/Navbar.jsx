@@ -36,10 +36,10 @@ export default function Navbar() {
         className="navbar navbar-expand-lg fixed-top"
         style={{ backgroundColor: "rgba(21,25,29,.7)" }}
       >
-        <div className="container-fluid">
-          <span class="navbar-brand" href="#">
-            <img style={{ maxHeight: "40px" }} src={logo} alt="logo" />
-          </span>
+        <span class="navbar-brand" href="#">
+          <img style={{ maxHeight: "40px" }} src={logo} alt="logo" />
+        </span>
+        <div className="container-fluid ">
           <button
             class="navbar-toggler"
             type="button"
@@ -52,32 +52,42 @@ export default function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div class="navbar-nav justify-content-between">
-              <Link to="/" style={linkStyle}>
-                <a className="navbar-brand">
-                  <Home className="ms-2 text-info" />
-                  <span style={{ color: "#fff" }}>صفحه اصلی</span>
-                </a>
-              </Link>
-              <Link to="/faq" style={linkStyle}>
-                <a className="navbar-brand">
-                  <HelpCenter className="ms-2 text-info" />
-                  <span style={{ color: "#fff" }}>سوالات متداول </span>
-                </a>
-              </Link>
-              <Link to="/about" style={linkStyle}>
-                <a className="navbar-brand">
-                  <Group className="ms-2 text-info" />
-                  <span style={{ color: "#fff" }}>درباره ما </span>
-                </a>
-              </Link>
-              <Link to="/contactUs" style={linkStyle}>
-                <a className="navbar-brand">
-                  <LocalPhone className="ms-2 text-info" />
-                  <span style={{ color: "#fff" }}> تماس با ما </span>
-                </a>
-              </Link>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div style={{width: "100%"}} class="navbar-nav d-flex justify-content-around">
+              <div>
+                <Link to="/" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <Home className="ms-2 text-info" />
+                    <span style={{ color: "#fff" }}>صفحه اصلی</span>
+                  </a>
+                </Link>
+              </div>
+
+              <div>
+                {" "}
+                <Link to="/faq" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <HelpCenter className="ms-2 text-info" />
+                    <span style={{ color: "#fff" }}>سوالات متداول </span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link to="/about" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <Group className="ms-2 text-info" />
+                    <span style={{ color: "#fff" }}>درباره وکیل </span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link to="/contactUs" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <LocalPhone className="ms-2 text-info" />
+                    <span style={{ color: "#fff" }}> تماس با ما </span>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
           <form className="d-none d-lg-flex" role="search">
