@@ -39,8 +39,6 @@ export default function InputForm() {
           ارسال 
         </Button>
       </form>
-    </>
-      
-      
+    </>  
   )
 }

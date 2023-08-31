@@ -26,7 +26,7 @@ export default function Faq() {
 
       
       </Box>
-      <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin:"10px auto"}}>
+      <div className="d-flex justify-content-center align-items-center my-5" >
         <Alert sx={{ lineHeight: "50px", fontSize: "1.5rem" }} severity="info">
           شما هم می توانید سوالتان را بپرسید
         </Alert>
