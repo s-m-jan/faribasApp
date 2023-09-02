@@ -1,4 +1,5 @@
-import AccordionItem from "../accordionItem/AccordionItem";
+
+import AccordionNewItem from "../accordionNewItem/AccordionNewItem";
 import style from "./AccQuestion.module.css";
 
 export default function AccQuestion() {
@@ -7,32 +8,32 @@ export default function AccQuestion() {
       <div className=" p-5">
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={1} identity={1} />
+            <AccordionNewItem number={1} />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={2} identity={2} />
+          <AccordionNewItem number={2} />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={3} identity={3} />
+          <AccordionNewItem number={3} />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={4} identity={4} />
+          <AccordionNewItem number={4} />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={5} identity={5} />
+          <AccordionNewItem number={5} />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 mb-2">
-            <AccordionItem number={6} identity={6} />
+          <AccordionNewItem number={6} />
           </div>
         </div>
       </div>

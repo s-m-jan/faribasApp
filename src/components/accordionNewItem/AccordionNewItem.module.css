@@ -1,0 +1,105 @@
+.tab{
+    max-height: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+   
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.queryLabel{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.querylabelContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 6px;
+}
+
+.addition{
+    color: black;
+    height: 30px;
+    font-size: 1.5em;
+    padding: 30px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapperone{
+    height: 0;
+    overflow: hidden;
+}
+
+.contentWrappertwo{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+ .h2one{
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: linear-gradient(135deg, rgb(222, 191, 132), rgb(167, 119, 31));
+}
+
+.h2two{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(222, 191, 132), rgb(167, 119, 31));
+}
+
+
+
+.h3one{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+    padding: 2px 10px;
+}
+
+.h3two{
+    background: #fff;
+    font-weight: 500;
+    padding: 2px 10px;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    color: #333;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
