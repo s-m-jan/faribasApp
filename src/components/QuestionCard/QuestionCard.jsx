@@ -7,9 +7,12 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import { Link, useParams } from "react-router-dom";
+
 
 
 export default function QuestionCard(props) {
+ 
   return (
     <Card sx={{ maxWidth: 345, direction: "rtl", marginBottom: "10px" }}>
       <CardMedia component="img" alt="green iguana" image={props.imageUrl} />
@@ -22,7 +25,9 @@ export default function QuestionCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">ادامه مطلب...</Button>
+        <Link to={`/articles/article/${parseInt(props.id)}`}>
+        <Button  size="small">ادامه مطلب...</Button>
+        </Link>
       </CardActions>
     </Card>
   );

@@ -65,10 +65,10 @@ export default function Navbar() {
 
               <div>
                 {" "}
-                <Link to="/faq" style={linkStyle}>
+                <Link to="/articles" style={linkStyle}>
                   <a className="navbar-brand">
                     <HelpCenter className="ms-2 text-info" />
-                    <span style={{ color: "#fff" }}>سوالات متداول </span>
+                    <span style={{ color: "#fff" }}> مقالات </span>
                   </a>
                 </Link>
               </div>

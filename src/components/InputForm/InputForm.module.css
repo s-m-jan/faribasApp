@@ -1,5 +1,5 @@
 .faqForm{
-    margin: 30px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,17 +8,18 @@
 }
 
 .faqForm label{
-    color: #444;
-    margin-top: 20px;
+    color: #eb2f06;
+    margin-top: 10px;
     margin-bottom: 3px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 .faqForm input{
-    width: 30%;
+    width: 60%;
     height: 45px;
     padding: 10px;
     color: #444;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     font-size: 1.5rem;
 }
@@ -29,7 +30,7 @@
     direction: ltr;
 }
 .faqForm textarea{
-    width: 40%;
+    width: 70%;
     height: 200px;
     margin-top: 20px;
     direction: rtl;
