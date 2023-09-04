@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import {  Box } from "@mui/material";
 import styled from "./Faq.module.css"
 import QuestionCard from "../../components/QuestionCard/QuestionCard";
-import { useQuery } from "react-query";
-import Axios from "axios"
+
+import useFetch from "../../hooks/useFetch";
 
 export default function Faq() {
   
 
-  const {data}= useQuery(["questions"], ()=>{
-    return Axios.get("http://localhost:8000/questions").then((res)=>res.data)
-  })
+ 
+
+  const {data}= useFetch("questions", "http://localhost:8000/questions")
 
 
  

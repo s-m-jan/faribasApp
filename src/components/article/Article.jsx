@@ -1,14 +1,11 @@
-import { useQuery } from "react-query";
-import Axios from "axios";
+
 import { useParams } from "react-router-dom";
 import style from "./Article.module.css";
+import useFetch from "../../hooks/useFetch";
 const Article = () => {
   const params = useParams();
-  const { data } = useQuery(["singleArticle"], () => {
-    return Axios.get(`http://localhost:8000/questions/${params.id}`).then(
-      (res) => res.data
-    );
-  });
+
+  const {data}= useFetch("singleArticle", `http://localhost:8000/questions/${params.id}`)
   return (
     <div className={style.container}>
       <h1>{data?.title}</h1>
