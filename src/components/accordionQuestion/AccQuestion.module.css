@@ -1,8 +1,8 @@
 
 .acc{
-    background-image: url(../../assets/images/faqBg02.jpg);
-    background-size: cover;
-    background-color: rgb(112, 82, 25);
-    /* background-blend-mode: luminosity; */
+    background-image: url(../../assets/images/berlin-brandenburg.jpg);
+    background-size:cover;
+    background-color: #2D4059;
+    background-blend-mode:luminosity;
     background-attachment: fixed;
 }

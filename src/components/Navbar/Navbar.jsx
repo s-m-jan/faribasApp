@@ -7,8 +7,7 @@ import {
 } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./../../assets/images/logo01-removebg-preview.png";
-
+import logo from "./../../assets/images/logo03.png";
 const linkStyle = {
   textDecoration: "none",
 };
@@ -34,7 +33,7 @@ export default function Navbar() {
     <div className="container-fluid">
       <nav
         className="navbar navbar-expand-lg fixed-top"
-        style={{ backgroundColor: "rgba(21,25,29,.7)" }}
+        style={{ backgroundColor: "rgba(45, 64, 89, .8)" }}
       >
         <span class="navbar-brand" href="#">
           <img style={{ maxHeight: "40px" }} src={logo} alt="logo" />
@@ -76,7 +75,7 @@ export default function Navbar() {
                 <Link to="/about" style={linkStyle}>
                   <a className="navbar-brand">
                     <Group className="ms-2 text-info" />
-                    <span style={{ color: "#fff" }}>درباره وکیل </span>
+                    <span style={{ color: "#fff" }}>درباره ما </span>
                   </a>
                 </Link>
               </div>

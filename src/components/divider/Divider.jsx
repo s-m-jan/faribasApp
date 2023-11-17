@@ -4,7 +4,7 @@ export default function Divider() {
   return (
     <div className={style.divider}>
       <div className="col-md-5">
-        <h1 className="text-dark">سوالات حقوقی متداول</h1>
+        <h1 className="text-dark">سوالات متداول</h1>
       </div>
     </div>
   );

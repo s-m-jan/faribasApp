@@ -1,6 +1,6 @@
 .tab{
     max-height: 500px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
    
     box-shadow: 0 15px 25px rgba(0,0,0,0.1);
     border-radius: 5px;
@@ -55,7 +55,7 @@
     font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
-    background: linear-gradient(135deg, rgb(222, 191, 132), rgb(167, 119, 31));
+    background: linear-gradient(135deg, rgb(240, 123, 63),rgb(255, 212, 96));
 }
 
 .h2two{
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, rgb(222, 191, 132), rgb(167, 119, 31));
+    background: linear-gradient(135deg, rgb(240, 123, 63),rgb(255, 212, 96));
 }
 
 

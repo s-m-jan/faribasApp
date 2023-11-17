@@ -11,27 +11,29 @@
 
 video{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 97%;
+    object-fit:cover;
 }
 
 .content{
-    color: white;
+    color: #fff;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.content img{
-    width: 10%;
+.content  img{
+    width: 40%;
     opacity: .8;
-    border-radius: 30px;
+    border-radius: 50px;
 }
+
 
 .overlay{
     position: absolute;
@@ -39,5 +41,20 @@ video{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+  
+}
+
+.left{
+    background-color: rgba(0, 0 , 0, .8);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

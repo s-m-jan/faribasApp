@@ -1,8 +1,6 @@
 .aboutUs{
-    background-image: url("./../../assets/images/aboutBg.jpg");
+    background-image: url("./../../assets/images/Munich.jpg");
     background-size:cover;
-    background-color: #605c70;
-    background-blend-mode:lighten;
     padding: 100px;
     background-attachment: fixed;
 }
@@ -91,6 +89,8 @@
     line-height: 35px;
     padding: 10px;
     background-color: transparent;
-    color: black;
+    color: rgb(255, 212, 96);
+    background-color: rgba(45, 64, 89, .8);
+    border-radius: 10px;
     border: none;
 }

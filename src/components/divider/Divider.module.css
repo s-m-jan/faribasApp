@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid gray;
+    border: 5px solid  rgb(234, 84, 85);
     padding: 20px;
     border-radius: 10px;
-    box-shadow:inset 0px 0px 4px 2px rgb(167, 119, 31);
+    box-shadow:inset 0px 0px 4px 2px rgb(255, 212, 96);
 }
