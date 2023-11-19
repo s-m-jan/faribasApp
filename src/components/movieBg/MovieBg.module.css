@@ -7,6 +7,9 @@
 .main{
     width: 100%;
     height: 100vh;
+    background-image: url(../../assets/images/mainBg01.jpg);
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 video{
@@ -50,11 +53,58 @@ video{
     margin: 10px;
 }
 
+.textBox{
+    text-align: center;
+    color: rgb(61, 61, 61);
+    position: absolute;
+    top:30%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.textBox h1{
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../assets/images/flag.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite ;
+}
+
+
+.textBox h2{
+    width: 100%;
+    font-size: 70px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #ccc;
+    background: url(../../assets/images/flag.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite ;
+}
+
+@keyframes back {
+    100%{
+        background-position: 700px 0;
+    }
+}
+
+
+
 @media screen and (max-width: 600px) {
     .content{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+}
+@media screen and (max-width: 760px) {
+    .main{
+        background-position: center;
     }
 }

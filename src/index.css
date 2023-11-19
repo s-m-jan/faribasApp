@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'IRANSansWebBold';
+  src: local('IRANSansWebBold'), url(./fonts/IRANSansWebBold.ttf) format('truetype');
+}
+ *{
+  font-family: IRANSansWebBold;
+ }
 body {
   direction: rtl;
   margin: 0;
-  font-family: Helvetica, sans-serif ,Arial   -apple-system, BlinkMacSystemFont,   'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: IRANSansWebBold,  Helvetica, sans-serif ,Arial   -apple-system, BlinkMacSystemFont,   'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

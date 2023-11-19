@@ -55,7 +55,7 @@
     font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
-    background: linear-gradient(135deg, rgb(240, 123, 63),rgb(255, 212, 96));
+    background: linear-gradient(135deg, rgba(61, 61, 61,1.0),rgba(75, 75, 75,0.6));
 }
 
 .h2two{
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, rgb(240, 123, 63),rgb(255, 212, 96));
+    background: linear-gradient(135deg, rgba(125, 95, 255,1.0),rgba(126, 255, 245,1.0));
 }
 
 

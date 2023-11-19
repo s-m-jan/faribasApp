@@ -13,13 +13,13 @@
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 900px;
-    background: rgb(85, 121, 170);
+    background: rgb(125, 95, 255);
 }
 
 footer{
     position: relative;
     width: 100%;
-    background: rgb(46, 66, 92);
+    background: rgb(113, 88, 226);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
