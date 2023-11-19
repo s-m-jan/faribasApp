@@ -1,39 +1,26 @@
 import {
   Group,
-  HelpCenter,
+  ShopSharp,
   Home,
-  LocalPhone,
+  Newspaper,
   Search,
+  School,
+  ShoppingCartSharp
 } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./../../assets/images/logo03.png";
+import logo from "./../../assets/images/logo01.png";
 const linkStyle = {
   textDecoration: "none",
 };
 
 export default function Navbar() {
   return (
-    // <div className="container-fluid">
-    //   <div className={styled.navbar}>
-    //     <div id={styled.rightSide}>
-    //       <Home />
-    //       <Link to="/">وکیل پایه یک دادگستری </Link>
-    //       <Link to="/">صفحه اصلی</Link>
-    //       <Link to="/faq">سوالات متداول</Link>
-    //       <Link to="/about">درباره ما</Link>
-    //       <Link to="/contact">تماس با ما </Link>
-    //     </div>
-    //     <div id={styled.leftSide}>
-    //       <Search sx={{ fontSize: 40 }} />
-    //     </div>
-    //   </div>
-    // </div>
 
     <div className="container-fluid">
       <nav
         className="navbar navbar-expand-lg fixed-top"
-        style={{ backgroundColor: "rgba(45, 64, 89, .8)" }}
+        style={{ backgroundColor: "rgb(234, 84, 85)" }}
       >
         <span class="navbar-brand" href="#">
           <img style={{ maxHeight: "40px" }} src={logo} alt="logo" />
@@ -56,7 +43,7 @@ export default function Navbar() {
               <div>
                 <Link to="/" style={linkStyle}>
                   <a className="navbar-brand">
-                    <Home className="ms-2 text-info" />
+                    <Home className="ms-2" style={{color: "rgb(45, 64, 89)"}} />
                     <span style={{ color: "#fff" }}>صفحه اصلی</span>
                   </a>
                 </Link>
@@ -66,24 +53,43 @@ export default function Navbar() {
                 {" "}
                 <Link to="/articles" style={linkStyle}>
                   <a className="navbar-brand">
-                    <HelpCenter className="ms-2 text-info" />
+                    <Newspaper className="ms-2" style={{color: "rgb(45, 64, 89)"}} />
                     <span style={{ color: "#fff" }}> مقالات </span>
                   </a>
                 </Link>
               </div>
               <div>
-                <Link to="/about" style={linkStyle}>
+              <Link to="/" style={linkStyle}>
                   <a className="navbar-brand">
-                    <Group className="ms-2 text-info" />
-                    <span style={{ color: "#fff" }}>درباره ما </span>
+                    <ShopSharp className="ms-2" style={{color: "rgb(45, 64, 89)"}}/>
+                    <span style={{ color: "#fff" }}> محصولات </span>
                   </a>
                 </Link>
+                
               </div>
               <div>
-                <Link to="/contact" style={linkStyle}>
+              <Link to="/" style={linkStyle}>
                   <a className="navbar-brand">
-                    <LocalPhone className="ms-2 text-info" />
-                    <span style={{ color: "#fff" }}> تماس با ما </span>
+                    <ShoppingCartSharp className="ms-2" style={{color: "rgb(45, 64, 89)"}}/>
+                    <span style={{ color: "#fff" }}> سبد خرید </span>
+                  </a>
+                </Link>
+                
+              </div>
+              <div>
+              <Link to="/contact" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <School className="ms-2" style={{color: "rgb(45, 64, 89)"}}/>
+                    <span style={{ color: "#fff" }}> رزرو کلاس </span>
+                  </a>
+                </Link>
+                
+              </div>
+              <div>
+              <Link to="/about" style={linkStyle}>
+                  <a className="navbar-brand">
+                    <Group className="ms-2" style={{color: "rgb(45, 64, 89)"}} />
+                    <span style={{ color: "#fff" }}>درباره ما </span>
                   </a>
                 </Link>
               </div>

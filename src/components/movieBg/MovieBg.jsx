@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./MovieBg.module.css";
 import videoBg from "./../../assets/bgvideo00.mp4";
-import faribaImage from "./../../assets/images/fariba01.png";
+import faribaImage from "./../../assets/images/logo01.png";
 import mapImage from "./../../assets/images/map.png";
 
 const MovieBg = () => {
@@ -14,11 +14,10 @@ const MovieBg = () => {
           <img src={mapImage} alt="german map" />
         </div>
         <div className={style.left}>
-          <img src={faribaImage} alt="Fariba Eghbal" />
           <h1 style={{ margin: "15px", color: "rgb(255, 212, 96)" }}>
-            به آموزشگاه آنلاینِ آلفا خوش آمدید
+            اینجا <img src={faribaImage} alt="Fariba Eghbal" /> هستش
           </h1>
-          <h3> گروه آموزشِ آلمانی فریبا اقبال </h3>
+          <h3> اگر قصد مهاجرت به آلمان رو داری و میخوای آلمانی رو در سریع ترین زمان ممکن یاد بگیری  جای درستی اومدی!!!! </h3>
         </div>
       </div>
     </div>
