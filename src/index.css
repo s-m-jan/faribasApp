@@ -4,6 +4,7 @@
 }
  *{
   font-family: IRANSansWebBold;
+  direction: rtl;
  }
 body {
   direction: rtl;

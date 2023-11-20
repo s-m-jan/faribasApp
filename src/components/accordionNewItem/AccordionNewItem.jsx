@@ -2,25 +2,25 @@ import { useState } from "react";
 import style from "./AccordionNewItem.module.css";
 
 export default function AccordionNewItem(props) {
-    const [showAnswer, setShowAnswer] = useState(false)
+  const [showAnswer, setShowAnswer] = useState(false)
 
-    const handleClick= ()=>{
-        setShowAnswer(!showAnswer)
-    }
+  const handleClick = () => {
+    setShowAnswer(!showAnswer)
+  }
   return (
     <div className={style.tab}>
-        
+
       <label onClick={handleClick} className={style.queryLabel}>
         <div className={style.querylabelContent}>
-          <h2 className={showAnswer? style.h2two: style.h2one}>{props.number}</h2>
-          <h3 className={showAnswer? style.h3two: style.h3one }>این یک سوال ساختگی است؟</h3>
+          <h2 className={showAnswer ? style.h2two : style.h2one}>{props.number}</h2>
+          <h3 className={showAnswer ? style.h3two : style.h3one}>این یک سوال ساختگی است؟</h3>
         </div>
         <div className={style.addition}>
-            {showAnswer? <ion-icon name="close-outline"></ion-icon> : <ion-icon  name="add-outline"></ion-icon>}
+          {showAnswer ? <ion-icon name="close-outline"></ion-icon> : <ion-icon name="add-outline"></ion-icon>}
         </div>
       </label>
 
-      <div className={showAnswer?style.contentWrappertwo: style.contentWrapperone}>
+      <div className={showAnswer ? style.contentWrappertwo : style.contentWrapperone}>
         <p className={style.content}>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در

@@ -54,6 +54,7 @@ video{
 }
 
 .textBox{
+    width: 100%;
     text-align: center;
     color: rgb(61, 61, 61);
     position: absolute;
@@ -106,5 +107,21 @@ video{
 @media screen and (max-width: 760px) {
     .main{
         background-position: center;
+    }
+
+    .textBox{
+        top:25%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .textBox h1{
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .textbox h2{
+        font-size: 30px;
+        font-weight: 600;
     }
 }
