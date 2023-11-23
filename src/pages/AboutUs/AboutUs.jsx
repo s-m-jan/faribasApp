@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "./AboutUs.module.css";
 import FaribaImage from "./../../assets/images/fariba01.png";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function AboutUs() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className={`container-fluid text-center ${styled.aboutUs}`}>
       <div className="row">

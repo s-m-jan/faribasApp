@@ -12,8 +12,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 900px;
-    background: rgb(125, 95, 255);
+    min-height: 1000px;
+    background: rgb(125, 95, 255 );
 }
 
 footer{

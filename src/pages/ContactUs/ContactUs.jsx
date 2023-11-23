@@ -3,9 +3,16 @@ import AccordionNewItem from '../../components/accordionNewItem/AccordionNewItem
 import InputForm from '../../components/InputForm/InputForm'
 import { Alert } from '@mui/material'
 import style from './ContactUs.module.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 export default function ContactUs() {
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className='mt-5 py-5' id={style.contactPage}>
      <div className="d-flex justify-content-center align-items-center my-5" >

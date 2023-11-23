@@ -5,6 +5,7 @@
  *{
   font-family: IRANSansWebBold;
   direction: rtl;
+  box-sizing: border-box;
  }
 body {
   direction: rtl;
@@ -33,6 +34,8 @@ code {
 h1{
   font-weight: 800;
 }
+
+
 
 
 
