@@ -1,11 +1,11 @@
 import {
   Group,
-  ShopSharp,
   Home,
   Newspaper,
   Search,
   School,
-  ShoppingCartSharp
+  OndemandVideo,
+  MenuBook
 } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -61,8 +61,8 @@ export default function Navbar() {
               <div>
               <Link to="/" style={linkStyle}>
                   <a className="navbar-brand">
-                    <ShopSharp className="ms-2" style={{color: "rgba(255, 175, 64,1.0)"}}/>
-                    <span style={{ color: "#fff" }}> محصولات </span>
+                    <MenuBook className="ms-2" style={{color: "rgba(255, 175, 64,1.0)"}}/>
+                    <span style={{ color: "#fff" }}> کتاب های آموزشی </span>
                   </a>
                 </Link>
                 
@@ -70,8 +70,8 @@ export default function Navbar() {
               <div>
               <Link to="/" style={linkStyle}>
                   <a className="navbar-brand">
-                    <ShoppingCartSharp className="ms-2" style={{color: "rgba(255, 175, 64,1.0)"}}/>
-                    <span style={{ color: "#fff" }}> سبد خرید </span>
+                    <OndemandVideo className="ms-2" style={{color: "rgba(255, 175, 64,1.0)"}}/>
+                    <span style={{ color: "#fff" }}>فیلم و سریال</span>
                   </a>
                 </Link>
                 

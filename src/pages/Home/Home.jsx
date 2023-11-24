@@ -1,5 +1,5 @@
 import React from 'react'
-import MovieBg from '../../components/movieBg/MovieBg'
+import MainBg from '../../components/mainBg/MainBg'
 import AccQuestion from '../../components/accordionQuestion/AccQuestion'
 import Divider from '../../components/divider/Divider'
 import { useEffect } from 'react';
@@ -17,7 +17,7 @@ export default function Home() {
   }, [pathname]);
   return (
     <div>
-      <MovieBg/>
+      <MainBg/>
       <Divider title="خدمات آموزشی"/>
       <ProductSlide/>
       <Divider title="سوالات متداول"/>

@@ -1,0 +1,18 @@
+.title{
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    width: 300px;
+}
+
+.productDesc a{
+    text-decoration: none;
+    color: rgb(50, 255, 126);
+}
+.productDesc{
+ text-shadow: 1px 1px black;
+ color: rgb(24, 220, 255);
+}
+
+
+
